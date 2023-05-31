@@ -13,7 +13,9 @@
                         <li>
                             {{name}} 
                             {{#if point includeZero=true}} ({{point}}) {{/if}}
-                            {{#if isTop}} (1234665) {{/if}}
+
+                            {{#if isTop}} (top !) {{/if}}
+                            
                             {{#unless point}} 
                                 {{#if point includeZero=true}} (зараз вивчаємо) {{/if}}
                             {{/unless}}
