@@ -1,0 +1,107 @@
+<div>
+    <hr>
+    <h2>Program</h2>
+    {{#with program}}
+        <h4>Excursion:</h4>
+        {{#with excursion}}
+            <b>Name:{{name}}</b>
+            <br>
+            {{#with location}}
+                <h4>location:</h4>
+                <b>City:{{city}}</b>
+                <br>
+                <b>Country:{{country}}</b>
+            {{/with}}
+            <br>
+            <b>Date:<q>{{date}}</q></b>
+            <br>
+            <h4>Program:</h4>
+            {{#each program}}
+                <br>
+                <b>Name:{{name}}</b>
+                <br>
+                <b>Type:{{type}}</b>
+                <br>
+                <b>Duration:</b><q>{{duration}}</q>
+                <h4>Details:</h4>
+                {{#with details}}
+                    <b>Museum:</b>
+                    {{#with museum}}
+                        <b>{{name}}</b>
+                        <br>
+                        <b>Location:</b>
+                        {{#with location}}
+                            <br>
+                            <b>Address:{{address}}</b> 
+                            <br>
+                            <b>City:{{city}}</b>
+                            <br>
+                            <b>Country:{{country}}</b>
+                        {{/with}}
+                        <b>Exhibits:</b>
+                        {{#each exhibits}}
+                            <b>Name:{{name}}</b>
+                            <br>
+                            <b>Artist:{{artist}}</b>
+                            <br>
+                            <b>Description:{{description}}</b>
+                            <br>
+                            <b>Audio Guide{{audio_guide}}</b>
+                        {{/each}}
+                    {{/with}}
+                    <br>
+                    <b>Guide:</b>
+                    {{#with guide}}
+                        <b>Name:{{name}}</b>
+                        <br>
+                        <b>language:{{language}}</b>
+                        <br>
+                        <b>Rating:{{rating}}</b>
+                    {{/with}}
+                {{/with}}
+                    <br>
+                    <b>Name:{{name}}</b>
+                    <br>
+                    <b>Type:{{type}}</b>
+                    <br>
+                    <b>Duration:{{duration}}</b>
+                    <b>Details:</b>
+                {{#with details}}
+                    {{#with venue}}
+                        <b>Name:{{name}}</b>
+                        <b>Location:</b>
+                        {{#with location}}
+                            <br>
+                            <b>Address:{{address}}</b>
+                            <br>
+                            <b>City:{{city}}</b>
+                            <br>
+                            <b>Country:{{country}}</b>
+                        {{/with}}
+                    {{/with}}
+                    <b>Perfo:rmers</b>
+                    {{#each performers}}
+                        <br>
+                        <b>Name:{{name}}</b>
+                        <br>
+                        <b>Type:{{type}}</b>
+                        <br>
+                    {{/each}}
+                    <b>Quide:</b>
+                    {{#with guide}}
+                        <br>
+                        <b>Name:{{name}}</b>
+                        <br>
+                        <b>Language:{{language}}</b>
+                        <br>
+                        <b>Rating:{{rating}}</b>
+                    {{/with}}
+                {{/with}}
+            {{/each}}   
+        {{/with}}  
+    {{/with}}
+    <hr>     
+</div>
+   
+
+        

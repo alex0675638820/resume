@@ -14,7 +14,7 @@
   </head>
 
   <body>
-	{{#with heder}}
+	{{#with header}}
 		<header>
 			<div>
 				<h1>{{name/firstname}} {{name/lastname}}</h1>
@@ -43,7 +43,7 @@
     {{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   --}}
     {{{body}}}
 	{{!-- {{#with footer}} --}}
-		{{> footer social=footer.social firstname=heder.name.lastname address=heder.address}}
+		{{> footer social=footer.social firstname=header.name.lastname address=header.address}}
 	{{!-- {{/with}} --}}
   </body>
 
