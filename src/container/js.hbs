@@ -1,0 +1,72 @@
+<div>
+    <h1>{{name}}</h1>
+    <b>Description: {{description}}</b>
+    <h2>History:</h2>
+    <ul>
+        {{#with history}}
+            <li><b>Founder: {{founder}}</b></li>
+            <li><b>Year: {{year}}</b></li>
+        {{/with}}
+    </ul>
+    <h2>Types:</h2>
+    <ul>
+        {{#each types}}
+            <li><b>{{this}}</b></li>
+        {{/each}}
+    </ul>
+    <h2>Syntax:</h2>
+    <ul>
+        {{#with syntax}}
+            <li>
+                <b>Variables: 
+                    {{#each variables}}
+                    <li><b>{{this}}</b></li>
+                    {{/each}}
+                </b>
+            </li>
+            <br>
+            <li>
+                <b>Classes: 
+                    {{#each classes}}
+                    <li><b>{{this}}</b></li>
+                    {{/each}}
+                </b>
+            </li>
+            <br>
+            <li>
+                <b>Functions: 
+                    {{#each functions}}
+                    <li><b>{{this}}</b></li>
+                    {{/each}}
+                </b>
+            </li>
+            <br>
+            <li>
+                <b>Conditionals: 
+                    {{#each conditionals}}
+                    <li><b>{{this}}</b></li>
+                    {{/each}}
+                </b>
+            </li>
+            <br>
+            <li>
+                <b>Loops: 
+                    {{#each loops}}
+                    <li><b>{{this}}</b></li>
+                    {{/each}}
+                </b>
+            </li>
+        {{/with}}
+    </ul>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Features
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">First-class functions</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
+
+</div>
