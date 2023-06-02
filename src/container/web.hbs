@@ -56,7 +56,6 @@
                     <b>Name: {{name}}</b>
                     <b>Description: </b><q>{{description}}</q>
                     <br>
-                    <br>
                     <h3>Values:</h3>
                     <ul>
                         {{#each values}}
@@ -64,15 +63,15 @@
                             <li><b>Description: </b><q>{{description}}</q></li>
                         {{/each}}
                     </ul>
+                    <b>Name: {{name}}</b>
+                    <b>Version: {{version}}</b>
+                    <b>Description: </b><q>{{description}}</q>
                 </ul>
-                <br>
-                <b>Name: {{name}}</b>
-                <b>Version: {{version}}</b>
-                <b>Description: </b><q>{{description}}</q>
                 <br>
                 <h3>Functions:</h3>
                 <ul>
                     {{#each functions}}
+                    <br>
                         <li><b>Name: {{name}}</b></li> 
                         <li><b>Description: </b><q>{{description}}</q></li>
                     {{/each}}
@@ -84,12 +83,10 @@
                             <li><b>Type: {{type}}</b></li>
                             <li><b>Description: </b><q>{{description}}</q></li>
                         {{/each}}
-                    </ul>
-                    <b>Name: {{name}}</b>
-                    <b>Description: </b><q>{{description}}</q>
-                    <br>
-                    <h3>Parameters:</h3>
-                    <ul>
+                        <b>Name: {{name}}</b>
+                        <b>Description: </b><q>{{description}}</q>
+                        <br>
+                        <h3>Parameters:</h3>
                         {{#each parameters}}
                             <li><b>Name: {{name}}</b></li> 
                             <li><b>Type: {{type}}</b></li>
