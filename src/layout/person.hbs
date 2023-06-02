@@ -7,26 +7,16 @@
 
   <head>
     <title>
-      {{page.title}}
+      Person page
     </title>
     <meta charset='utf-8' />
     <link href='css/index.css' rel='stylesheet' />
   </head>
 
   <body>
-	
-    {{> nav}}
-	<br>
-	<hr>
-
-    {{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   --}}
+    
     {{{body}}}
-
-	<br>
-
-	{{!-- {{#with footer}} --}}
-		{{> footer social=footer.social firstname=header.name.lastname address=header.address}}
-	{{!-- {{/with}} --}}
+	
   </body>
 
 </html>
