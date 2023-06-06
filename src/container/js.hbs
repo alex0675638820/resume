@@ -59,14 +59,42 @@
         {{/with}}
     </ul>
     <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Features
-        </button>
-        <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">First-class functions</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Closures</a></li>
+            <li><a class="dropdown-item" href="#">Dynamic typing</a></li>
+            <li><a class="dropdown-item" href="#">Prototype-based inheritance</a></li>
+            <li><a class="dropdown-item" href="#">Asynchronous programming with Promises and async/await</a></li>
+            <li><a class="dropdown-item" href="#">Modules with import/export statements</a></li>
         </ul>
     </div>
-
+    <br>
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            libraries
+            <li><a class="dropdown-item" href="#">jQuery</a></li>
+            <li><a class="dropdown-item" href="#">React</a></li>
+            <li><a class="dropdown-item" href="#">Angula</a></li>
+            <li><a class="dropdown-item" href="#">Node.js</a></li>
+            <li><a class="dropdown-item" href="#">Express.js</a></li>
+            <li><a class="dropdown-item" href="#">Lodash</a></li>
+            <li><a class="dropdown-item" href="#">Moment.js</a></li>
+        </ul>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary">Tools</button>
+    <br>
+        {{#each tools}}
+        <li><b>{{this}}</b></li>
+        {{/each}}
+    <br>
+    <button type="button" class="btn btn-warning">Community</button>
+    <ul>
+        {{#each community}}
+        <br>
+            <li><b>Name: {{name}}</b></li>
+            <li><b>Type: {{type}}</b></li>
+        {{/each}}
+    </ul>
 </div>
