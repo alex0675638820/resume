@@ -4,19 +4,19 @@
         <b>Users:</b>
         <br>
         {{#each users}}
-            <br>
+           
             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
             <button type="button" class="btn btn-danger">Id: {{id}}</button>
             <button type="button" class="btn btn-warning">Name: {{name}}</button>
             <button type="button" class="btn btn-success">Gender: {{gender}}</button>
             <button type="button" class="btn btn-success">Age: {{age}}</button>
-            <br>
+            
             </div>
             <br>
             <ul>
                 <b>Friends:</b>
                 {{#each friends}}
-                    <br>
+                    
                     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                     <button type="button" class="btn btn-danger">Id: {{id}}</button>
                     <button type="button" class="btn btn-warning">Name: {{name}}</button>
@@ -34,34 +34,32 @@
                         <button type="button" class="btn btn-success">Age: {{age}}</button>
                         </div>
                     {{/each}}
-                {{/each}}
-                </ul>
-                <br>
-                <ul>
-                    <b>Groups:</b>
-                    {{#each groups}}
-                        <br>
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                        <button type="button" class="btn btn-danger">Id: {{id}}</button>
-                        <button type="button" class="btn btn-warning">Name: {{name}}</button>
-                        <button type="button" class="btn btn-warning">Description: {{description}}</button>
-                        </div>
-                        <ul>
+                    <br>
+                    <ul>
+                        <b>Groups:</b>
+                        {{#each groups}}
                             <br>
-                            <b>Members:</b>
-                            {{#each members}}
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                            <button class="button" class="btn btn-outline-danger">Id: {{id}}</button>
+                            <button class="button" class="btn btn-outline-warning">Name: {{name}}</button>
+                            <button class="button" class="btn btn-outline-warning">Description: {{description}}</button>
+                            </div>
+                            <ul>
                                 <br>
-                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                <button type="button" class="btn btn-danger">Id: {{id}}</button>
-                                <button type="button" class="btn btn-warning">Name: {{name}}</button>
-                                <button type="button" class="btn btn-success">Gender: {{gender}}</button>
-                                <button type="button" class="btn btn-success">Age: {{age}}</button>
-                                </div>
-                            {{/each}}
-                        </ul>
-                        <br>
-                    {{/each}}
-                </ul>
+                                <b>Members:</b>
+                                {{#each members}}
+                                    <br>
+                                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                    <button class="button" class="btn btn-outline-danger">Id: {{id}}</button>
+                                    <button class="button" class="btn btn-outline-warning">Name: {{name}}</button>
+                                    <button class="button" class="btn btn-outline-success">Gender: {{gender}}</button>
+                                    <button class="button" class="btn btn-outline-success">Age: {{age}}</button>
+                                    </div>
+                                {{/each}}
+                            </ul>
+                        {{/each}}
+                    </ul>
+                 {{/each}}
             </ul>
         {{/each}}
     </ul>
