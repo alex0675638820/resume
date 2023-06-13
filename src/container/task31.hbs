@@ -12,7 +12,7 @@
         {{#with header}}
             <h1>{{title}}</h1>
             <br>
-            <p class="text-muted">{{description}}</p>  
+            <p >{{description}}</p>  
             <br>
             {{#with button}}
                 <button href="{{button.link}}" class="btn btn-primary">{{text}}</button>
@@ -26,7 +26,7 @@
             {{#each cards}}
                 <div class="col-5">
                     <div class="card ">
-                        <div class="card-body"> 
+           class="text-muted"             <div class="card-body"> 
                             {{#with picture}}
                                 <img class="card-img-top" src="{{src}}" alt="{{alt}}">
                             {{/with}}

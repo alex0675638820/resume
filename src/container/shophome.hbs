@@ -1,0 +1,105 @@
+<main class="row m-0">
+   <section class="col-12 nav">
+        <div class="card col-12">
+            <div class="nav">
+                {{#with navigation}}
+                    {{#each links}}
+                        <a href="{{href}}" class="btn-primary mx-2">{{text}}</a> 
+                    {{/each}}
+                    <div>
+                         <a href="#" class="nav-link disabled p-0 ms-4">Sales</a>
+                    </div>
+                {{/with}}
+            </div> 
+        </div>
+   </section>
+   <section class="row g-2">
+        {{#with newsBlock}}
+            <h2 class="text-center col-12">{{title}}</h2>
+            {{#each cards}}
+                <div class="col-3">
+                    <div class="card m-0 text-bg-dark">
+                        <div class="card-body m-0 py-1 px-2">
+                            <h6>{{title}}
+                                <div>
+                                    <span class="badge text-bg-success rounded-pill text-uppercase">{{isNew}}</span>
+                                    <span class="badge text-bg-danger rounded-pill text-uppercase">{{isTop}}</span>
+                                </div>
+                            </h6>
+                            <d>{{description}}</d>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        {{/with}}
+   </section>
+   <hr>
+   <section>
+         <div class="col-12 mb-5">
+            <div class="nav nav-tabs">
+                {{#with goodsBlock}}
+                    {{#each tabs}}
+                        <div class="nav-item ">
+                            <a href="#" class="nav-link">{{text}}</a>
+                        </div>
+                    {{/each}}
+                {{/with}}
+            </div>
+         </div>
+   </section>
+   <section class="row">
+            <div class="card col-4">
+                <div class="card-body m-1 p-1">
+                    {{#each cards}}
+                        <img class="card-img-top" src={{image}} "Product photo">
+                        <div>
+                            <h5 class="card-title">{{title}}</h5>
+                            <div>
+                                <span class="badge text-bg-warning rounded-pill text-uppercase">{{isHot}}</span>
+                                <span class="badge text-bg-primery rounded-pill text-uppercase">{{isNew}}</span>
+                            </div>
+                            <p>{{description}}</p>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+   </section>
+   <hr>
+   <section class="col-12">
+        <div class="card col-12 text-bg-dark p-3">
+            {{#with subscribe}}
+                <h2>{{header}}</h2>
+                <p class="gy-2">{{description}}</p>
+                <a href="{{buttons.[0].link}}" class="btn btn-primary col-3 my-1">{{buttons.[0].text}}</a> 
+                <a href="{{buttons.[1].link}}" class="btn btn-primary col-4 my-1">{{buttons.[1].text}}</a> 
+            {{/with}}
+        </div>
+   </section>
+   <hr>
+   <section class="row">
+        <div class="card col-12 text-bg-warning p-3 text-center">
+            {{#with service}}
+                <h2 class="col-12 text-center">{{service}}</h2>
+                <p class="gy-2">{{description}}</p>
+                {{#each buttons}}
+                    <div class="text-center">
+                        <button href="{{link}}" class="btn btn-primary col-3 my-1">{{text}}</button> 
+                    </div>
+                {{/each}}
+            {{/with}}
+        </div>
+   </section>
+   <hr>
+   <footer class="row">
+        <div class="col-10">
+            {{#each footer}}
+                <div class="col-2">
+                    <a href="{{[0].link}}" class="nav nav-link p-0 pb-2 active">{{[0].text}}</a>
+                    <a href="{{[1].link}}" class="nav nav-link p-0 pb-2 active">{{[1].text}}</a>
+                    <a href="{{[2].link}}" class="nav nav-link p-0 pb-2 active">{{[2].text}}</a>
+                    <a href="{{[3].link}}" class="nav nav-link p-0 pb-2 disabled">{{[3].text}}</a>
+                </div>
+            {{/each}}
+        </div>
+   </footer>
+</main>
