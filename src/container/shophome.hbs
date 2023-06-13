@@ -1,4 +1,4 @@
-<main class="row m-0">
+<main class="row m-2">
    <section class="col-12 nav">
         <div class="card col-12">
             <div class="nav">
@@ -13,12 +13,12 @@
             </div> 
         </div>
    </section>
-   <section class="row g-2">
+   <section class="row">
         {{#with newsBlock}}
             <h2 class="text-center col-12">{{title}}</h2>
             {{#each cards}}
-                <div class="col-3">
-                    <div class="card m-0 text-bg-dark">
+                <div class="card col-4">
+                    <div class="m-0 text-bg-dark">
                         <div class="card-body m-0 py-1 px-2">
                             <h6>{{title}}
                                 <div>
@@ -40,32 +40,47 @@
                 {{#with goodsBlock}}
                     {{#each tabs}}
                         <div class="nav-item ">
-                            <a href="#" class="nav-link">{{text}}</a>
+                            {{#if isActive}}
+                                <a href="#" class="nav-link active">{{text}}</a>
+                                {{else}}
+                                {{#if isDisabled}}       
+                                <a href="#" class="nav-link disabled">{{text}}</a>
+                                {{else}}
+                                <a href="#" class="nav-link">{{text}}</a>  
+                                {{/if}}
+                            {{/if}}
                         </div>
                     {{/each}}
+                    <section class="col-12">
+                        <div class="row gx-2 gy-2">
+                            {{!-- <div class="card col-4"> --}}
+                                {{#each cards}}
+                                    <div class="card col-3 m-3 p-0">
+                                        <img class="card-img-top" src={{image}} "Product photo">
+                                        <div class="p-1">
+                                            <h5 class="card-title">{{title}}</h5>
+                                            <div>
+                                                {{#if isHot}}
+                                                    <span class="badge text-bg-warning rounded-pill text-uppercase">{{isHot}}</span>
+                                                {{else}}
+                                                    <span disabled class="badge text-bg-warning rounded-pill text-uppercase">{{isHot}}</span>
+                                                {{/if}}
+                                                {{#if isNew}}
+                                                    <span class="badge text-bg-primery rounded-pill text-uppercase">{{isNew}}</span>
+                                                {{else}}
+                                                    <span disabled class="badge text-bg-warning rounded-pill text-uppercase">{{isNew}}</span>
+                                                {{/if}}
+                                            </div>
+                                            <p>{{description}}</p>
+                                        </div>
+                                    </div>
+                                {{/each}}
+                            </div>
+                        </div>        
+                    </section>
                 {{/with}}
             </div>
-         </div>
-   </section>
-   <section class="row">
-            <div class="card col-12">
-                <div class="card-body m-1 p-1">
-                    {{#each cards}}
-                        <div class="col-4">
-                            <img class="card-img-top" src={{image}} "Product photo">
-                            <div>
-                                <h5 class="card-title">{{title}}</h5>
-                                <div>
-                                    <span class="badge text-bg-warning rounded-pill text-uppercase">{{isHot}}</span>
-                                    <span class="badge text-bg-primery rounded-pill text-uppercase">{{isNew}}</span>
-                                </div>
-                                <p>{{description}}</p>
-                            </div>
-                        </div>
-                    {{/each}}
-                </div>
-            </div>
-   </section>
+        </div>
    <hr>
    <section class="col-12">
         <div class="card col-12 text-bg-dark p-3">
@@ -92,10 +107,10 @@
         </div>
    </section>
    <hr>
-   <footer class="row">
-        <div class="col-10">
+   <footer class="col-11">
+        <div class="row">
             {{#each footer}}
-                <div class="col-2">
+                <div class="nov-item col-2 p-0 m-2">
                     <a href="{{[0].link}}" class="nav nav-link p-0 pb-2 active">{{[0].text}}</a>
                     <a href="{{[1].link}}" class="nav nav-link p-0 pb-2 active">{{[1].text}}</a>
                     <a href="{{[2].link}}" class="nav nav-link p-0 pb-2 active">{{[2].text}}</a>
