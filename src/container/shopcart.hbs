@@ -1,0 +1,28 @@
+<main>
+    <div class="row">
+        <div class="card">
+            <div class="nav p-2">
+                {{#with navigation}}
+                    {{#each links}}
+                        <a href="{{href}}" class="card-nav btn-primary mx-2">{{text}}</a>
+                    {{/each}}
+                    <a disabled>Disabled</a>
+                {{/with}}
+            </div> 
+        </div>
+        <div>
+            {{#with header}}
+                <h2 class="mt-3">{{title}}</h2>
+                {{#with button}}
+                    <button href="{{link}}" class="btn btn-outline-dark">{{text}}</button>
+                {{/with}}
+            {{/with}}
+        </div>
+        <hr class="my-4">
+        <div>
+            {{> cartGoodsItem}}
+        </div>
+        
+
+    </div>
+</main>
