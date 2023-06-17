@@ -1,0 +1,78 @@
+<main class="row p-2">
+    <div class="card p-2">
+        {{#with navigation}}
+            <div class="nav">
+                {{#each links}}
+                    <a href="{{href}}" class="card-nav btn-primary mx-2">{{text}}</a>
+                {{/each}}
+                <a href="#" class="nav-link disabled p-0 px-2">Disabled</a>
+            </div>
+        {{/with}}
+    </div>
+    <div class="row">
+        <div class="col-8">
+            {{#with formBlock}}
+               <h2 class="mb-2 mt-4">{{header}}</h2>
+               {{#with rating}}
+                    <span>{{title}} : {{value}}</span>
+               {{/with}}
+               <div class="nav nav-tabs">
+                {{#with actionBlock}}
+                    {{#each tabs}}
+                        <div class="nav-item mt-3">
+                            {{#if isActive}}
+                                <a href="#" class="nav-link active">{{text}}</a>
+                            {{else}}
+                                <a href="#" class="nav-link">{{text}}</a>  
+                            {{/if}}
+                        </div>
+                    {{/each}}
+                    <hr class="my-3">
+                    {{#with report}}
+                        <div class="col-12 my-5">
+                            <div class="card p-2"> 
+                                <span>{{title}}</span>
+                                {{#with button}}
+                                    <button href="{{link}}" class="btn btn-secondary col-4 mt-2">{{text}}</button>
+                                {{/with}}
+                            </div>
+                        </div>
+                    {{/with}}
+                    
+                {{/with}}
+                <hr class="mt-2">
+                {{#with feedbackBlock}}
+                    <h2 class="mb-3">{{title}}</h2>
+                    {{#each buttons}}
+                        {{#if isWarning}}
+                            <button href="{{link}}" class="btn btn-warning">{{text}}</button>
+                        {{/if}}
+                        {{#if isSuccess}}
+                            <button href="{{link}}" class="btn btn-success mx-1">{{text}}</button>
+                        {{/if}}
+                        {{#if isDanger}}
+                            <button href="{{link}}" class="btn btn-danger">{{text}}</button>
+                        {{/if}}
+                    {{/each}}
+                {{/with}}
+            {{/with}}
+        </div>
+        <div class="col-4">
+            {{#with goodsInfo}}
+                <div class="card">
+                    <img class="card-img-top" src="{{photo}}" alt="Product photo">
+                    <div class="card-body">
+                    <h5 class="card-title">{{name}}</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <h5 class="card-title text-bg-primary">{{name}}</h5>
+                    <p class="text-bg-info">Телевизор Xiaomi Mi TV <br> Q1E 55"</p>
+                    <a href="/summary" class="btn btn-primary">Open</a> 
+                </div>
+            {{/with}}
+            </div>
+        </div>
+    </div>
+</main>
+
