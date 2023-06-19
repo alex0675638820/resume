@@ -2743,5 +2743,34 @@ router.get('/shopreview', function (req, res) {
 })
 
 // ================================================================
+
+// ================================================================
+
+//              ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/index', function (req, res) {
+  //             ↙ cюди вводимо назву файлу з сontainer
+  res.render('index', {
+    // ↙ сюди вводимо JSON дані
+    layout: 'index',
+    page: {
+      title: 'Resume',
+    },
+    header,
+    firstname: 'Олександр',
+    lastname:  'Нетребко',
+    title: 'Resume project',
+    main: {
+        title: 'Cписок сторінок',
+        text: `'Open-minded for new technologies, with 1 years of experience in development. Whenever I start to
+                      work on a new project I learn the domain and try to understand the idea of the project. Good team
+                      player, every colleague is a friend to me.'`,
+      },
+    
+    // footer: ,
+  }),
+})
+
+// ================================================================
+
 // Підключаємо роутер до бек-енду
 module.exports = router

@@ -26,11 +26,13 @@
                     <h5 class="card-title mt-2 mb-0">{{title}} :</h5>
                     <span>{{text}}</span>
                 {{/with}}
-                {{#each images}}
-                    <div class="col-12">
-                    <div class="py-2 col-3"><img width="70px" src="{{this}}"></div>
+                <div class="col-12">
+                    <div class="row"> 
+                        {{#each images}}
+                            <div class="py-2 ps-2 col-2"><img width="100px" src="{{this}}"></div>
+                        {{/each}}
                     </div>
-                {{/each}}
+                </div>
             </div>
             <div class="card ms-5 pt-1 me-1">
                 {{#each coments}}
