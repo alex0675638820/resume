@@ -2743,5 +2743,122 @@ router.get('/shopreview', function (req, res) {
 })
 
 // ================================================================
+
+// ================================================================
+
+//              ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/index', function (req, res) {
+  //             ↙ cюди вводимо назву файлу з сontainer
+  res.render('index', {
+    // ↙ сюди вводимо JSON дані
+    layout: 'index',
+    page: {
+      title: 'Resume',
+    },
+    header,
+    firstname: 'Олександр',
+    lastname:  'Нетребко',
+    title: 'Resume project',
+    main: {
+        title: 'Cписок сторінок',
+        text: `'В цьому спискупосилання на сторінки які я виконував в якості домашного завдання.'`,
+      },
+    buttons: [
+      {
+        title: 'Резюме :',
+        text: 'Summary',
+        link: '/summary',
+      },
+      {
+        text: 'Skills',
+        link: '/skills',
+      },
+      {
+        text: 'Education',
+        link: '/education',
+      },
+      {
+        text: 'Work',
+        link: '/work',
+      },
+      {
+        text: 'Person',
+        link: '/person',
+      },
+      {
+        text: 'Bio',
+        link: '/bio',
+      },
+      {
+        text: 'Program',
+        link: '/program',
+      },
+      {
+        text: 'Web',
+        link: '/web',
+      },
+      {
+        title: 'Домашні завдання :',
+        text: 'Js',
+        link: '/js',
+      },
+      {
+        text: 'Car',
+        link: '/car',
+      },
+      {
+        text: 'Mac',
+        link: '/mac',
+      },
+      {
+        text: 'Facebook',
+        link: '/facebook',
+      },
+      {
+        text: 'Task21',
+        link: '/task21',
+      },
+      {
+        text: 'Task22',
+        link: '/task22',
+      },
+      {
+        text: 'Task31',
+        link: '/task31',
+      },{
+        text: 'Shophome',
+        link: '/shophome',
+      },
+      {
+        text: 'Shoporde',
+        link: '/shoporde',
+      },
+      {
+        text: 'Shopcart',
+        link: '/shopcart',
+      },
+      {
+        text: 'Shopreview',
+        link: '/shopreview',
+      },
+      {
+        text: 'Shopcart',
+        link: '/shopcart',
+      },
+      {
+        text: 'Shopcart',
+        link: '/shopcart',
+      },
+      {
+        text: 'Shopcart',
+        link: '/shopcart',
+      },
+    ],
+    // footer: ,
+  })
+})
+
+// ================================================================
+
 // Підключаємо роутер до бек-енду
 module.exports = router
