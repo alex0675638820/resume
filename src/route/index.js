@@ -2761,13 +2761,101 @@ router.get('/index', function (req, res) {
     title: 'Resume project',
     main: {
         title: 'Cписок сторінок',
-        text: `'Open-minded for new technologies, with 1 years of experience in development. Whenever I start to
-                      work on a new project I learn the domain and try to understand the idea of the project. Good team
-                      player, every colleague is a friend to me.'`,
+        text: `'В цьому спискупосилання на сторінки які я виконував в якості домашного завдання.'`,
       },
-    
+    buttons: [
+      {
+        title: 'Резюме :',
+        text: 'Summary',
+        link: 'http://localhost:3000/summary',
+      },
+      {
+        text: 'Skills',
+        link: 'http://localhost:3000/skills',
+      },
+      {
+        text: 'Education',
+        link: 'http://localhost:3000/education',
+      },
+      {
+        text: 'Work',
+        link: 'http://localhost:3000/work',
+      },
+      {
+        text: 'Person',
+        link: 'http://localhost:3000/person',
+      },
+      {
+        text: 'Bio',
+        link: 'http://localhost:3000/bio',
+      },
+      {
+        text: 'Program',
+        link: 'http://localhost:3000/program',
+      },
+      {
+        text: 'Web',
+        link: 'http://localhost:3000/web',
+      },
+      {
+        title: 'Домашні завдання :',
+        text: 'Js',
+        link: 'http://localhost:3000/js',
+      },
+      {
+        text: 'Car',
+        link: 'http://localhost:3000/car',
+      },
+      {
+        text: 'Mac',
+        link: 'http://localhost:3000/mac',
+      },
+      {
+        text: 'Facebook',
+        link: 'http://localhost:3000/facebook',
+      },
+      {
+        text: 'Task21',
+        link: 'http://localhost:3000/task21',
+      },
+      {
+        text: 'Task22',
+        link: 'http://localhost:3000/task22',
+      },
+      {
+        text: 'Task31',
+        link: 'http://localhost:3000/task31',
+      },{
+        text: 'Shophome',
+        link: 'http://localhost:3000/shophome',
+      },
+      {
+        text: 'Shoporde',
+        link: 'http://localhost:3000/shoporde',
+      },
+      {
+        text: 'Shopcart',
+        link: 'http://localhost:3000/shopcart',
+      },
+      {
+        text: 'Shopreview',
+        link: 'http://localhost:3000/shopreview',
+      },
+      {
+        text: 'Shopcart',
+        link: 'http://localhost:3000/shopcart',
+      },
+      {
+        text: 'Shopcart',
+        link: 'http://localhost:3000/shopcart',
+      },
+      {
+        text: 'Shopcart',
+        link: 'http://localhost:3000/shopcart',
+      },
+    ],
     // footer: ,
-  }),
+  })
 })
 
 // ================================================================
