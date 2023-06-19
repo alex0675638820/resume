@@ -2767,91 +2767,91 @@ router.get('/index', function (req, res) {
       {
         title: 'Резюме :',
         text: 'Summary',
-        link: 'http://localhost:3000/summary',
+        link: '/summary',
       },
       {
         text: 'Skills',
-        link: 'http://localhost:3000/skills',
+        link: '/skills',
       },
       {
         text: 'Education',
-        link: 'http://localhost:3000/education',
+        link: '/education',
       },
       {
         text: 'Work',
-        link: 'http://localhost:3000/work',
+        link: '/work',
       },
       {
         text: 'Person',
-        link: 'http://localhost:3000/person',
+        link: '/person',
       },
       {
         text: 'Bio',
-        link: 'http://localhost:3000/bio',
+        link: '/bio',
       },
       {
         text: 'Program',
-        link: 'http://localhost:3000/program',
+        link: '/program',
       },
       {
         text: 'Web',
-        link: 'http://localhost:3000/web',
+        link: '/web',
       },
       {
         title: 'Домашні завдання :',
         text: 'Js',
-        link: 'http://localhost:3000/js',
+        link: '/js',
       },
       {
         text: 'Car',
-        link: 'http://localhost:3000/car',
+        link: '/car',
       },
       {
         text: 'Mac',
-        link: 'http://localhost:3000/mac',
+        link: '/mac',
       },
       {
         text: 'Facebook',
-        link: 'http://localhost:3000/facebook',
+        link: '/facebook',
       },
       {
         text: 'Task21',
-        link: 'http://localhost:3000/task21',
+        link: '/task21',
       },
       {
         text: 'Task22',
-        link: 'http://localhost:3000/task22',
+        link: '/task22',
       },
       {
         text: 'Task31',
-        link: 'http://localhost:3000/task31',
+        link: '/task31',
       },{
         text: 'Shophome',
-        link: 'http://localhost:3000/shophome',
+        link: '/shophome',
       },
       {
         text: 'Shoporde',
-        link: 'http://localhost:3000/shoporde',
+        link: '/shoporde',
       },
       {
         text: 'Shopcart',
-        link: 'http://localhost:3000/shopcart',
+        link: '/shopcart',
       },
       {
         text: 'Shopreview',
-        link: 'http://localhost:3000/shopreview',
+        link: '/shopreview',
       },
       {
         text: 'Shopcart',
-        link: 'http://localhost:3000/shopcart',
+        link: '/shopcart',
       },
       {
         text: 'Shopcart',
-        link: 'http://localhost:3000/shopcart',
+        link: '/shopcart',
       },
       {
         text: 'Shopcart',
-        link: 'http://localhost:3000/shopcart',
+        link: '/shopcart',
       },
     ],
     // footer: ,
